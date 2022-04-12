@@ -12,6 +12,7 @@
     "serve": "http-server dist"
   },
   "devDependencies": {
+    "@parcel/transformer-inline-string": "2.4.1",
     "http-server": "^14.1.0",
     "parcel": "^2.4.1",
     "rimraf": "^3.0.2"
