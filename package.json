@@ -1,0 +1,19 @@
+{
+  "name": "stackoverflow-parcel-bundle-text-bug",
+  "version": "1.0.0",
+  "description": "A repro of a bug in parcel that occurs when combining normal css imports with the bundle-text pipline",
+  "author": "Andrew Stegmaier",
+  "license": "ISC",
+  "scripts": {
+    "start": "parcel src/index.html",
+    "build": "parcel build src/index.html --no-optimize --no-scope-hoist",
+    "clean": "rimraf dist .parcel-cache",
+    "rebuild": "yarn clean && yarn build",
+    "serve": "http-server dist"
+  },
+  "devDependencies": {
+    "http-server": "^14.1.0",
+    "parcel": "^2.4.1",
+    "rimraf": "^3.0.2"
+  }
+}
